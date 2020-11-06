@@ -155,7 +155,7 @@ def getMxBuildFiles( mxVersion ):
 		
 		if not os.path.exists( _mxLibraryDirectory + targetMxBuildZip ): 
 			debug("Start downloading: " + targetMxBuildZip)
-			urllib.request.urlretrieve("http://cdn.mendix.com/runtime/" + targetMxBuildZip, _mxLibraryDirectory + targetMxBuildZip )
+			urllib.request.urlretrieve("https://cdn.mendix.com/runtime/" + targetMxBuildZip, _mxLibraryDirectory + targetMxBuildZip )
 
 			debug("Download finished, extracting ...")
 		else:
