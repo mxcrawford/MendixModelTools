@@ -203,7 +203,7 @@ def buildMendixDeploymentArchive(  mxBuildFolder, javaLocation, mprFile, outputF
 	
 	elif ( not "/" in outputFile and not "\\" in outputFile ):
 		outputFile = _buildOutputDirectory + outputFile
-		version_tag = version
+		version_tag = ""
 	
 	buildCL = "{}/modeler/mxbuild.exe \"{}\" --java-home=\"{}\" --java-exe-path=\"{}\" {} --output=\"{}\" ".format( mxBuildFolder, mprFile, javaLocation, javaExeLocation, version_tag, outputFile )
 	debug( "Running script : " + buildCL )
