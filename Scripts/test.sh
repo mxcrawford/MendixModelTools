@@ -1,0 +1,2 @@
+python mxbuild_simple.py -v "9.7.0.29648" -java "C:\Program Files\AdoptOpenJDK\jdk-11.0.3.7-hotspot" -r 30 -d true -o project_30_5919.mda
+python mxbuild_simple.py -v "9.7.0.29648" -java "C:\Program Files\AdoptOpenJDK\jdk-11.0.3.7-hotspot" -r 30 -d true -o project_30_5919.mda -f project/
