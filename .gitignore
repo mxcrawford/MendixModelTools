@@ -2,6 +2,7 @@
 Scripts/mxLib/*
 Scripts/exports/*
 Scripts/builds/*
+Scripts/project/*
 Scripts/buildreport.txt
 */javasource/*/proxies/*
 */javasource/system/
