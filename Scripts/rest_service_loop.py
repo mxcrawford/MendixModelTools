@@ -30,9 +30,12 @@ def rest_loop(url, method,  body, headers, variable, value):
 def call_rest_service(url, method,  body, headers):
     print("starting rest call")
     _headers = ""
-    if body:
+    if bool(body):
         print("body found")
         data = json.loads(body)
+
+    if bool(headers):
+        print("headers found")
         _headers = json.loads(headers)
 
     if method == "GET":
