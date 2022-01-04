@@ -1,4 +1,4 @@
-import subprocess, random, os, shutil, requests, os.path, tarfile, argparse, platform, glob, json, time
+import requests, argparse, json, time
 
 # Setup arguments
 parser = argparse.ArgumentParser(description='Loop Rest call until desire response is reached') 
