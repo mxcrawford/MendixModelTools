@@ -53,7 +53,7 @@ def getMxBuildFiles( mxVersion , _mxLibraryDirectory):
 	## If we don't have that on disk yet, download the tar file and extract it
 	targetMxBuild = _mxLibraryDirectory + mxVersion
 	if not os.path.exists( targetMxBuild ): 
-		targetMxBuildZip =  "win-mxbuild-{}.tar.gz".format(mxVersion)
+		targetMxBuildZip =  "mxbuild-{}.tar.gz".format(mxVersion)
 		
 		if not os.path.exists( _mxLibraryDirectory + targetMxBuildZip ): 
 			debug("Start downloading: " + targetMxBuildZip)
