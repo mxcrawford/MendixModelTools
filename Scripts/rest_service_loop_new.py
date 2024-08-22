@@ -55,15 +55,12 @@ def call_rest_service(url, method,  body, headers):
 
 def parse_response(data, variable):
     print("parsing result")
-    result = json.loads(data)
-    print(result)
-    jobData = result.job
-    print(jobData)
-    status = jobData.status
-    print(status)
+    print(data)
+    job = data['job']
+    print(job)
 
-    print(data[variable])
-    return data[variable]
+    print(job[variable])
+    return job[variable]
     
 
 
