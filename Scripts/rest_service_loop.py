@@ -56,6 +56,7 @@ def call_rest_service(url, method,  body, headers):
 def parse_response(data, variable):
     print("parsing result")
     #result = json.loads(data)
+    print(data[variable])
     return data[variable]
     
 
