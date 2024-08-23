@@ -57,14 +57,15 @@ def parse_response(data, variable):
     print("parsing result")
     print(data)
     job = data['job']
+    write_json_file(job)
     print(job)
 
     print(job[variable])
     return job[variable]
-    
 
-
-
+def write_json_file(data):
+    with open('package.json', 'w') as f:
+        json.dump(data, f)
 
 ##
 ##	Main execution 
